@@ -16,6 +16,12 @@ class DashboardNotifier with ChangeNotifier {
       'function': 'aboutme',
     },
     {
+      'icon': 'assets/icons/linkedn.png',
+      'color': Color(0xff0A66C2),
+      'text': 'Linkedn',
+      'function': 'linkedn',
+    },
+    {
       'icon': 'assets/icons/instagram.png',
       'color': Color(0xffE1306C),
       'text': 'Instagram',
@@ -51,12 +57,12 @@ class DashboardNotifier with ChangeNotifier {
       'text': 'Font Family',
       'function': 'changefonts',
     },
-    {
-      'icon': 'assets/icons/design.png',
-      'color': Colors.lightBlue,
-      'text': 'Free UI Kits',
-      'function': 'changefonts',
-    },
+    // {
+    //   'icon': 'assets/icons/design.png',
+    //   'color': Colors.lightBlue,
+    //   'text': 'Free UI Kits',
+    //   'function': 'changefonts',
+    // },
   ];
 
   List colors = [
@@ -139,6 +145,11 @@ class DashboardNotifier with ChangeNotifier {
       case 'email':
         {
           launchEmail('mohitormohit@gmail.com', 'Let\'s talk', 'Hi Mohit');
+          notifyListeners();
+        }
+      case 'linkedn':
+        {
+          launchUrlInNewTab('https://www.linkedin.com/in/mohitorkumar/');
           notifyListeners();
         }
         break;

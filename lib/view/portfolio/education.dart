@@ -14,11 +14,12 @@ Widget education(DashboardNotifier myData) {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 40),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15),
               child: Row(
                 children: [
-                  Text('Experience',
+                  Text('Education',
                       style: GoogleFonts.getFont(myData.currentFamily).copyWith(
                         color: Colors.white,
                         fontSize: 18,

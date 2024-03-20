@@ -18,11 +18,12 @@ Widget skills(DashboardNotifier myData) {
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        SizedBox(height: 20),
         Container(
           margin: EdgeInsets.symmetric(horizontal: 15),
           child: Row(
             children: [
-              Text('Experience',
+              Text('Skills',
                   style: GoogleFonts.getFont(myData.currentFamily).copyWith(
                     color: Colors.white,
                     fontSize: 18,
