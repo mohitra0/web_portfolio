@@ -18,7 +18,7 @@ Widget skills(DashboardNotifier myData) {
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(height: 20),
+        SizedBox(height: 40),
         Container(
           margin: EdgeInsets.symmetric(horizontal: 15),
           child: Row(
